@@ -8,14 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var a = 0.0
+    @State var b = 0.0
+    @State var c = 0.0
+    @State var xOne = 0.0
+    @State var xTwo = 0.0
+    @State var delta = 0.0
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("The Quadratic Formula")
+                .font(.title)
+                .padding()
+            Text("\(a)*x^2+\(b)*x+\(c)=0")
+                .font(.custom("SF Pro", size: 13))
+                .padding()
+            Text("∆=\(b)^2-4*\(a)*\(c)")
+                .font(.custom("SF Pro", size: 13))
+                .padding()
+            Spacer(minLength: 1)
         }
-        .padding()
+        VStack{
+            Text("x1 = \(-1*b+(sqrt(delta))/2*a)")
+            Text("x2 = \(-1*b-(sqrt(delta))/2*a)")
+            Text("∆ = \((b*b)-(4*a*c))")
+        }
+        VStack{
+            TextField("a value", value: $a, formatter: NumberFormatter())
+                .keyboardType(UIKeyboardType.decimalPad)
+                .padding()
+            TextField("b value", value: $b, formatter: NumberFormatter())
+                .keyboardType(UIKeyboardType.decimalPad)
+                .padding()
+            TextField("c value", value: $c, formatter: NumberFormatter())
+                .keyboardType(UIKeyboardType.decimalPad)
+                .padding()
+            }
+        Spacer(minLength: 100)
     }
 }
 
@@ -24,3 +52,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
