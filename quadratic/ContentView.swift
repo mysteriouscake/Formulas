@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var a = 0.0
-    @State var b = 0.0
-    @State var c = 0.0
-    @State var xOne = 0.0
-    @State var xTwo = 0.0
-    @State var delta = 0.0
+    @State var a: Float = 0.0
+    @State var b: Float = 0.0
+    @State var c: Float = 0.0
+    @State var xOne: Float = 0.0
+    @State var xTwo: Float = 0.0
+    @State var delta: Float = 0.0
     var body: some View {
         VStack {
             Text("The Quadratic Formula")
