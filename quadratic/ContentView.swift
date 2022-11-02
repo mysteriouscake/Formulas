@@ -36,21 +36,40 @@ struct ContentView: View {
             Text("∆ = \((b*b)-(4*a*c))")
         }
         VStack{
-            //HStack{
+            HStack{
                 TextField("a value", value: $a, formatter: NumberFormatter())
                     .keyboardType(UIKeyboardType.decimalPad)
                     .padding()
-            //    Button(action: switchSigns(input: a) -> Float){
-            //        Text("+/-")
-            //    }
-                //WHAT
+                Button{
+                    a = switchSigns(input: a)
+                } label: {
+                    Text("+/-")
+                        .padding()
+                }
             }
-            TextField("b value", value: $b, formatter: NumberFormatter())
-                .keyboardType(UIKeyboardType.decimalPad)
-                .padding()
-            TextField("c value", value: $c, formatter: NumberFormatter())
-                .keyboardType(UIKeyboardType.decimalPad)
-                .padding()
+            HStack{
+                TextField("b value", value: $b, formatter: NumberFormatter())
+                    .keyboardType(UIKeyboardType.decimalPad)
+                    .padding()
+                Button{
+                    b = switchSigns(input: b)
+                } label: {
+                    Text("+/-")
+                        .padding()
+                }
+            }
+            HStack{
+                TextField("c value", value: $c, formatter: NumberFormatter())
+                    .keyboardType(UIKeyboardType.decimalPad)
+                    .padding()
+                Button{
+                    c = switchSigns(input: c)
+                } label: {
+                    Text("+/-")
+                        .padding()
+                }
+            }
+
             }
         Spacer(minLength: 100)
     }
