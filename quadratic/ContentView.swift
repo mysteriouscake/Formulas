@@ -13,6 +13,10 @@ struct ContentView: View {
     @State var c: Float = 0.0
     @State var xOne: Float = 0.0
     @State var xTwo: Float = 0.0
+    func switchSigns(input: Float) -> Float{
+        let output = input * -1.0
+        return output
+    }
     var body: some View {
         VStack {
             Text("The Quadratic Formula")
@@ -32,9 +36,15 @@ struct ContentView: View {
             Text("∆ = \((b*b)-(4*a*c))")
         }
         VStack{
-            TextField("a value", value: $a, formatter: NumberFormatter())
-                .keyboardType(UIKeyboardType.decimalPad)
-                .padding()
+            //HStack{
+                TextField("a value", value: $a, formatter: NumberFormatter())
+                    .keyboardType(UIKeyboardType.decimalPad)
+                    .padding()
+            //    Button(action: switchSigns(input: a) -> Float){
+            //        Text("+/-")
+            //    }
+                //WHAT
+            }
             TextField("b value", value: $b, formatter: NumberFormatter())
                 .keyboardType(UIKeyboardType.decimalPad)
                 .padding()
