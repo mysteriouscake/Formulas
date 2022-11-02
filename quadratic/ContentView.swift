@@ -30,12 +30,6 @@ struct ContentView: View {
             Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
             Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
             Text("∆ = \((b*b)-(4*a*c))")
-            /*
-            Text("\(sqrt((b*b)-(4*a*c)))")
-            Text("\(-1*b)")
-            Text("\(-1*b+sqrt((b*b)-(4*a*c)))")
-            Text("\((-1*b+sqrt((b*b)-(4*a*c)))/4)")
-             */
         }
         VStack{
             TextField("a value", value: $a, formatter: NumberFormatter())
