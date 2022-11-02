@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    //we simulating dat ax^2+bx+c=0
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
