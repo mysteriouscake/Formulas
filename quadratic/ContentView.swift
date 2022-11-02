@@ -71,7 +71,7 @@ struct ContentView: View {
             }
 
             }
-        Spacer(minLength: 100)
+        Spacer(minLength: 150)
     }
 }
 
