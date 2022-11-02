@@ -13,7 +13,6 @@ struct ContentView: View {
     @State var c: Float = 0.0
     @State var xOne: Float = 0.0
     @State var xTwo: Float = 0.0
-    @State var delta: Float = 0.0
     var body: some View {
         VStack {
             Text("The Quadratic Formula")
@@ -28,9 +27,15 @@ struct ContentView: View {
             Spacer(minLength: 1)
         }
         VStack{
-            Text("x1 = \(-1*b+(sqrt(delta))/2*a)")
-            Text("x2 = \(-1*b-(sqrt(delta))/2*a)")
+            Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
+            Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
             Text("∆ = \((b*b)-(4*a*c))")
+            /*
+            Text("\(sqrt((b*b)-(4*a*c)))")
+            Text("\(-1*b)")
+            Text("\(-1*b+sqrt((b*b)-(4*a*c)))")
+            Text("\((-1*b+sqrt((b*b)-(4*a*c)))/4)")
+             */
         }
         VStack{
             TextField("a value", value: $a, formatter: NumberFormatter())
