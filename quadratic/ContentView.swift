@@ -15,6 +15,7 @@ struct ContentView: View {
     @State var c: Float = 0.0
     @State var xOne: Float = 0.0
     @State var xTwo: Float = 0.0
+    @Environment(\.colorScheme) var colorScheme
     func switchSigns(input: Float) -> Float{
         let output = input * -1.0
         AudioServicesPlaySystemSound(1520)
@@ -25,12 +26,16 @@ struct ContentView: View {
             Text("The Quadratic Formula")
                 .font(.title)
                 .padding()
-            Text("(\(a))*x^2+(\(b))*x+(\(c))=0")
-                .font(.custom("SF Pro", size: 16))
-                .padding()
-            Text("∆=(\(b))^2-4*(\(a))*(\(c))")
-                .font(.custom("SF Pro", size: 16))
-                .padding()
+            ScrollView(.horizontal){
+                Text("(\(a))*x^2+(\(b))*x+(\(c))=0")
+                    .font(.custom("SF Pro", size: 16))
+                    .padding()
+            }
+            ScrollView(.horizontal){
+                Text("∆=(\(b))^2-4*(\(a))*(\(c))")
+                    .font(.custom("SF Pro", size: 16))
+                    .padding()
+            }
             Spacer(minLength: 1)
         }
         ScrollView(.horizontal){
@@ -61,7 +66,7 @@ struct ContentView: View {
                 Button{
                     a = switchSigns(input: a)
                 } label: {
-                    Text("+/-")
+                    Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                         .padding()
                 }
             }
@@ -72,7 +77,7 @@ struct ContentView: View {
                 Button{
                     b = switchSigns(input: b)
                 } label: {
-                    Text("+/-")
+                    Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                         .padding()
                 }
             }
@@ -83,7 +88,7 @@ struct ContentView: View {
                 Button{
                     c = switchSigns(input: c)
                 } label: {
-                    Text("+/-")
+                    Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                         .padding()
                 }
             }
