@@ -31,22 +31,24 @@ struct ContentView: View {
                 .padding()
             Spacer(minLength: 1)
         }
-        HStack{
-            VStack{
-                Text("A = \(a)")
-                    .font(.title)
-                Text("B = \(b)")
-                    .font(.title)
-                Text("C = \(c)")
-                    .font(.title)
-            }
-            VStack{
-                Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
-                    .font(.title)
-                Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
-                    .font(.title)
-                Text("∆ = \((b*b)-(4*a*c))")
-                    .font(.title)
+        ScrollView(.horizontal){
+            HStack{
+                VStack{
+                    Text("A = \(a)")
+                        .font(.title)
+                    Text("B = \(b)")
+                        .font(.title)
+                    Text("C = \(c)")
+                        .font(.title)
+                }
+                VStack{
+                    Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
+                        .font(.title)
+                    Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
+                        .font(.title)
+                    Text("∆ = \((b*b)-(4*a*c))")
+                        .font(.title)
+                }
             }
         }
         VStack{
