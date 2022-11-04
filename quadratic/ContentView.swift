@@ -35,19 +35,19 @@ struct ContentView: View {
             HStack{
                 VStack{
                     Text("A = \(a)")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                     Text("B = \(b)")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                     Text("C = \(c)")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                 }
                 VStack{
                     Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                     Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                     Text("∆ = \((b*b)-(4*a*c))")
-                        .font(.title)
+                        .font(.custom("SF Pro", size: 25))
                 }
             }
         }
