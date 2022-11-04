@@ -23,18 +23,31 @@ struct ContentView: View {
             Text("The Quadratic Formula")
                 .font(.title)
                 .padding()
-            Text("\(a)*x^2+\(b)*x+\(c)=0")
-                .font(.custom("SF Pro", size: 13))
+            Text("(\(a))*x^2+(\(b))*x+(\(c))=0")
+                .font(.custom("SF Pro", size: 16))
                 .padding()
-            Text("∆=\(b)^2-4*\(a)*\(c)")
-                .font(.custom("SF Pro", size: 13))
+            Text("∆=(\(b))^2-4*(\(a))*(\(c))")
+                .font(.custom("SF Pro", size: 16))
                 .padding()
             Spacer(minLength: 1)
         }
-        VStack{
-            Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
-            Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
-            Text("∆ = \((b*b)-(4*a*c))")
+        HStack{
+            VStack{
+                Text("A = \(a)")
+                    .font(.title)
+                Text("B = \(b)")
+                    .font(.title)
+                Text("C = \(c)")
+                    .font(.title)
+            }
+            VStack{
+                Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
+                    .font(.title)
+                Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
+                    .font(.title)
+                Text("∆ = \((b*b)-(4*a*c))")
+                    .font(.title)
+            }
         }
         VStack{
             HStack{
