@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 struct ContentView: View {
-    //we simulating dat ax^2+bx+c=0
+    //we simulating ax^2+bx+c=0
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
@@ -16,6 +17,7 @@ struct ContentView: View {
     @State var xTwo: Float = 0.0
     func switchSigns(input: Float) -> Float{
         let output = input * -1.0
+        AudioServicesPlaySystemSound(1520)
         return output
     }
     var body: some View {
