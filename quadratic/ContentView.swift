@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+//swiftui
 import AudioToolbox
+//haptics, baby
 
 struct ContentView: View {
     //simulating ax^2+bx+c=0
