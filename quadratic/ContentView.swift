@@ -13,8 +13,6 @@ struct ContentView: View {
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
-    @State var xOne: Float = 0.0
-    @State var xTwo: Float = 0.0
     @Environment(\.colorScheme) var colorScheme
     func switchSigns(input: Float) -> Float{
         let output = input * -1.0
