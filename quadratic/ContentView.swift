@@ -9,11 +9,13 @@ import SwiftUI
 import AudioToolbox
 
 struct ContentView: View {
-    //we simulating ax^2+bx+c=0
+    //simulating ax^2+bx+c=0
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
+    //this environment here just tells the app when it's dark mode or light mode to change assets accordingly
     @Environment(\.colorScheme) var colorScheme
+    //switches from + to -
     func switchSigns(input: Float) -> Float{
         let output = input * -1.0
         AudioServicesPlaySystemSound(1520)
@@ -24,6 +26,7 @@ struct ContentView: View {
             Text("The Quadratic Formula")
                 .font(.title)
                 .padding()
+                //following 10 lines provide examples for calculations/behind the scenes
             ScrollView(.horizontal){
                 Text("(\(a))*x^2+(\(b))*x+(\(c))=0")
                     .font(.custom("SF Pro", size: 16))
@@ -39,6 +42,7 @@ struct ContentView: View {
         ScrollView(.horizontal){
             HStack{
                 VStack{
+                    //displays values entered for readability/accuracy
                     Text("A = \(a)")
                         .font(.custom("SF Pro", size: 20))
                     Text("B = \(b)")
@@ -47,6 +51,7 @@ struct ContentView: View {
                         .font(.custom("SF Pro", size: 20))
                 }
                 VStack{
+                    //displays result values
                     Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
                         .font(.custom("SF Pro", size: 20))
                     Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
@@ -57,6 +62,7 @@ struct ContentView: View {
             }
         }
         VStack{
+            //inputs for a, b, and c
             HStack{
                 TextField("a value", value: $a, formatter: NumberFormatter())
                     .keyboardType(UIKeyboardType.decimalPad)
