@@ -17,7 +17,7 @@ struct ContentView: View {
     @State var c: Float = 0.0
     //this environment here just tells the app when it's dark mode or light mode to change assets accordingly
     @Environment(\.colorScheme) var colorScheme
-    //switches from + to -
+    //switches from positive to negative
     func switchSigns(input: Float) -> Float{
         let output = input * -1.0
         AudioServicesPlaySystemSound(1520)
@@ -30,7 +30,7 @@ struct ContentView: View {
                 .padding()
                 //following 10 lines provide examples for calculations/behind the scenes
             ScrollView(.horizontal){
-                Text("(\(a))*x^2+(\(b))*x+(\(c))=0")
+                Text("(\(round(a*100)/100))*x^2+(\(round(b*100)/100))*x+(\(round(c*100)/100))=0")
                     .font(.custom("SF Pro", size: 16))
                     .padding()
             }
