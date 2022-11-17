@@ -30,7 +30,7 @@ struct ContentView: View {
                 .padding()
                 //following 10 lines provide examples for calculations/behind the scenes
             ScrollView(.horizontal){
-                Text("(\(round(a*100)/100))*x^2+(\(round(b*100)/100))*x+(\(round(c*100)/100))=0")
+                Text("(\(a))*x^2+(\(a))*x+(\(c)=0")
                     .font(.custom("SF Pro", size: 16))
                     .padding()
             }
