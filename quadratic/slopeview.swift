@@ -6,25 +6,26 @@
 //
 
 import SwiftUI
-
+//swiftui
 struct slopeview: View {
+    //vars
     @State var xOne: Float = 0.0
     @State var xTwo: Float = 0.0
     @State var yOne: Float = 0.0
     @State var yTwo: Float = 0.0
     var body: some View {
         VStack{
-                Text("Y-Intercept Form and Point Slope Form")
+            Text("Y-Intercept Form and Point Slope Form")
                     .font(.title)
                     .multilineTextAlignment(.trailing)
                     .padding()
-                VStack{
-                    Text("Y-Intercept Form")
-                    Text("y = \((yTwo-yOne)/(xTwo-xOne))x + \(yOne-(((yTwo-yOne)/(xTwo-xOne))*xOne))")
+            VStack{
+                Text("Y-Intercept Form")
+                Text("y = \((yTwo-yOne)/(xTwo-xOne))x + \(yOne-(((yTwo-yOne)/(xTwo-xOne))*xOne))")
                 }
-                VStack{
-                    Text("Point Slope Form")
-                    Text("y - \(yOne) = \((yTwo-yOne)/(xTwo-xOne))(x - \(xOne))")
+            VStack{
+                Text("Point Slope Form")
+                Text("y - \(yOne) = \((yTwo-yOne)/(xTwo-xOne))(x - \(xOne))")
                 }
             HStack{
                 VStack{
