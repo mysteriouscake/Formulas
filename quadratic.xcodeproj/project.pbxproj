@@ -11,6 +11,8 @@
 		AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4D2911C358009E0E23 /* ContentView.swift */; };
 		AC5D3F502911C35A009E0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */; };
 		AC5D3F532911C35A009E0E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F522911C35A009E0E23 /* Preview Assets.xcassets */; };
+		AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E235229383E7600E7CF21 /* slopeview.swift */; };
+		AC6E23552938404700E7CF21 /* quadview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E23542938404700E7CF21 /* quadview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AC5D3F4D2911C358009E0E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5D3F522911C35A009E0E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC6E235229383E7600E7CF21 /* slopeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slopeview.swift; sourceTree = "<group>"; };
+		AC6E23542938404700E7CF21 /* quadview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quadview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */,
 				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
+				AC6E23542938404700E7CF21 /* quadview.swift */,
+				AC6E235229383E7600E7CF21 /* slopeview.swift */,
 				AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */,
 				AC5D3F512911C35A009E0E23 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */,
+				AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */,
 				AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */,
+				AC6E23552938404700E7CF21 /* quadview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,17 +278,18 @@
 				DEVELOPMENT_TEAM = X9L379DBLP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -300,17 +309,18 @@
 				DEVELOPMENT_TEAM = X9L379DBLP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
