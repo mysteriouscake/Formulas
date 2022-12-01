@@ -11,6 +11,7 @@
 		AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4D2911C358009E0E23 /* ContentView.swift */; };
 		AC5D3F502911C35A009E0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */; };
 		AC5D3F532911C35A009E0E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F522911C35A009E0E23 /* Preview Assets.xcassets */; };
+		AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E235229383E7600E7CF21 /* slopeview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AC5D3F4D2911C358009E0E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5D3F522911C35A009E0E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC6E235229383E7600E7CF21 /* slopeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slopeview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */,
 				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
+				AC6E235229383E7600E7CF21 /* slopeview.swift */,
 				AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */,
 				AC5D3F512911C35A009E0E23 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */,
+				AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */,
 				AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +284,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -310,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -29,6 +29,8 @@ struct ContentView: View {
                 Text("The Quadratic Formula")
                     .font(.title)
                     .padding()
+                //now this is navigation
+                //NavigationStack(path: <#T##SwiftUI.Binding<SwiftUI.NavigationPath>#>, root: <#T##() -> Root#>)
                     //following buncha lines provide examples for calculations/behind the scenes
             }
             ScrollView(.horizontal){
