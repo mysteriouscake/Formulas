@@ -85,11 +85,11 @@ struct slopeview: View {
                             } label: {
                                 Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                                     .padding()
-                            }
-                        }
-                    }
-                }
-            }
+                            } //label
+                        }//hstack minor
+                    }//vstack minor
+                }//hstack major
+            }//vstack parent
         }
     }
     
