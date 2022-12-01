@@ -25,10 +25,12 @@ struct ContentView: View {
     }
     var body: some View {
         VStack {
-            Text("The Quadratic Formula")
-                .font(.title)
-                .padding()
-                //following 10 lines provide examples for calculations/behind the scenes
+            HStack{
+                Text("The Quadratic Formula")
+                    .font(.title)
+                    .padding()
+                    //following buncha lines provide examples for calculations/behind the scenes
+            }
             ScrollView(.horizontal){
                 Text("(\(a))*x^2+(\(a))*x+(\(c)=0")
                     .font(.custom("SF Pro", size: 16))
