@@ -26,6 +26,7 @@ struct quadview: View {
             HStack{
                 Text("The Quadratic Formula")
                     .font(.title)
+                    .multilineTextAlignment(.trailing)
                     .padding()
                 //following buncha lines provide examples for calculations/behind the scenes
             }
