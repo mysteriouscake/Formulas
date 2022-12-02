@@ -89,6 +89,7 @@ struct slopeview: View {
                         }//hstack minor
                     }//vstack minor
                 }//hstack major
+                Spacer()
             }//vstack parent
         }
     }

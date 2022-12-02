@@ -40,7 +40,6 @@ struct quadview: View {
                     .font(.custom("SF Pro", size: 16))
                     .padding()
             }
-            Spacer(minLength: 1)
         }
         ScrollView(.horizontal){
             HStack{
@@ -99,11 +98,10 @@ struct quadview: View {
                         .padding()
                 }
             }
-
-            }
-        Spacer(minLength: 150)    }
+        }
+        Spacer()
+    }
 }
-
 struct quadview_Previews: PreviewProvider {
     static var previews: some View {
         quadview()
