@@ -26,7 +26,6 @@ struct quadview: View {
             HStack{
                 Text("The Quadratic Formula")
                     .font(.title)
-                    .multilineTextAlignment(.trailing)
                     .padding()
                 //following buncha lines provide examples for calculations/behind the scenes
             }
@@ -67,7 +66,6 @@ struct quadview: View {
             //inputs for a, b, and c
             HStack{
                 TextField("a value", value: $a, formatter: NumberFormatter())
-                    .keyboardType(UIKeyboardType.decimalPad)
                     .padding()
                 Button{
                     a = switchSigns(input: a)
@@ -78,7 +76,6 @@ struct quadview: View {
             }
             HStack{
                 TextField("b value", value: $b, formatter: NumberFormatter())
-                    .keyboardType(UIKeyboardType.decimalPad)
                     .padding()
                 Button{
                     b = switchSigns(input: b)
@@ -89,7 +86,6 @@ struct quadview: View {
             }
             HStack{
                 TextField("c value", value: $c, formatter: NumberFormatter())
-                    .keyboardType(UIKeyboardType.decimalPad)
                     .padding()
                 Button{
                     c = switchSigns(input: c)

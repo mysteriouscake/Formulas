@@ -27,7 +27,6 @@ struct slopeview: View {
             VStack{
                 Text("Y-Intercept Form and Point Slope Form")
                     .font(.title)
-                    .multilineTextAlignment(.trailing)
                     .padding()
                 VStack{
                     Text("Y-Intercept Form")
