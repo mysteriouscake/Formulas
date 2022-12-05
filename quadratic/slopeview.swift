@@ -25,18 +25,22 @@ struct slopeview: View {
     }
         var body: some View {
             VStack{
+                //it's a uhhh... title lol.
                 Text("Y-Intercept Form and Point Slope Form")
                     .font(.title)
                     .padding()
                 VStack{
+                    //example
                     Text("Y-Intercept Form")
                     Text("y = \((yTwo-yOne)/(xTwo-xOne))x + \(yOne-(((yTwo-yOne)/(xTwo-xOne))*xOne))")
                 }
                 VStack{
+                    //yet another example
                     Text("Point Slope Form")
                     Text("y - \(yOne) = \((yTwo-yOne)/(xTwo-xOne))(x - \(xOne))")
                 }
                 HStack{
+                    //need to know what you're doing eh?
                     VStack{
                         Text("X One = \(xOne)")
                         Text("Y One = \(yOne)")
