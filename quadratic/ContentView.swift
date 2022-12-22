@@ -17,6 +17,7 @@ struct ContentView: View {
             List{
                 NavigationLink("Quadratic", destination: quadview())
                 NavigationLink("Slope", destination: slopeview())
+                NavigationLink("Areas", destination: areaview())
             }
         }
     }
