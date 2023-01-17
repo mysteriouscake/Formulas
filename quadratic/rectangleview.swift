@@ -22,6 +22,7 @@ struct rectangleview: View {
     }
     var body: some View {
         VStack{
+            //title
             Text("Area for Quadrilaterals")
                 .font(.title)
                 .padding()
