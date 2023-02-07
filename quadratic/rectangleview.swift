@@ -23,11 +23,43 @@ struct rectangleview: View {
     var body: some View {
         VStack{
             //title
-            Text("Area for Quadrilaterals")
+            Text("Area/Perimeter for Quadrilaterals")
                 .font(.title)
                 .padding()
-        }
-    }
+            HStack{
+                Text("area = \(length*width)")
+                    .font(.title)
+                    .padding()
+                Text("perimeter = \(length*2+width*2)")
+                    .font(.title)
+                    .padding()
+            }//hstack minor
+            HStack{
+                Text("length = \(length)")
+                    .font(.heading)
+                    .padding()
+                Text("width = \(width)")
+                    .font(.heading)
+                    .padding()
+            }//hstack minor
+            VStack{
+                TextField("Length", value: $length, formatter: NumberFormatter())
+                Button{
+                    length = switchSigns(input: length)
+                } label: {
+                     Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
+                            .padding()
+                }
+                TextField("Width", value: $width, formatter: NumberFormatter())
+                Button{
+                    width = switchSigns(input: width)
+                } label: {
+                     Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
+                            .padding()
+                }
+            }
+        }//vstack major
+    }//view body
 }
 
 struct rectangleview_Previews: PreviewProvider {
