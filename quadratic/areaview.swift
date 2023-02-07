@@ -12,6 +12,12 @@ struct areaview: View {
         NavigationStack{
             List{
                 NavigationLink("Rectangle/Square", destination: rectangleview())
+                /*
+                TODO BEFORE RELEASE:
+                Triangle
+                Circle
+                Trapezoid
+                */
             }
         }
     }
