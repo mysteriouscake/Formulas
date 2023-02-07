@@ -56,8 +56,8 @@ struct rectangleview: View {
                 } label: {
                      Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                             .padding()
-                }
-            }
+                }//label
+            }//vstack textfields
         }//vstack major
     }//view body
 }
