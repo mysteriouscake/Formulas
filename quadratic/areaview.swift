@@ -13,7 +13,7 @@ struct areaview: View {
             List{
                 NavigationLink("Rectangle/Square", destination: rectangleview())
                 /*
-                TODO BEFORE RELEASE:
+                TODO BEFORE 2.0 RELEASE:
                 Triangle
                 Circle
                 Trapezoid
