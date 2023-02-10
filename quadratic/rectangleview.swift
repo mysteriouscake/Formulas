@@ -36,28 +36,32 @@ struct rectangleview: View {
             }//hstack minor
             HStack{
                 Text("length = \(length)")
-                    .font(.heading)
+                    .font(.title2)
                     .padding()
                 Text("width = \(width)")
-                    .font(.heading)
+                    .font(.title2)
                     .padding()
             }//hstack minor
             VStack{
-                TextField("Length", value: $length, formatter: NumberFormatter())
-                Button{
-                    length = switchSigns(input: length)
-                } label: {
-                     Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
+                HStack{
+                    TextField("Length", value: $length, formatter: NumberFormatter())
+                    Button{
+                        length = switchSigns(input: length)
+                    } label: {
+                        Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                             .padding()
+                    }
                 }
-                TextField("Width", value: $width, formatter: NumberFormatter())
-                Button{
-                    width = switchSigns(input: width)
-                } label: {
-                     Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
+                HStack{
+                    TextField("Width", value: $width, formatter: NumberFormatter())
+                    Button{
+                        width = switchSigns(input: width)
+                    } label: {
+                        Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
                             .padding()
-                }//label
-            }//vstack textfields
+                    }//label
+                }//hstack tf
+            }//vstack tf
         }//vstack major
     }//view body
 }
