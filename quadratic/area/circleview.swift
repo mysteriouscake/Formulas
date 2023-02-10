@@ -18,7 +18,23 @@ struct circleview: View {
         return output
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Circle")
+                .font(.title)
+                .padding()
+            HStack{
+                Text("Diameter = \(radius*2)")
+                Text("Circumference = \(radius*2*3.14159265359)")
+                Text("Area = \(radius*radius*3.14159265359)")
+            }
+            TextField("Radius", value: $radius, formatter: NumberFormatter())
+            Button{
+                radius = switchSigns(input: radius)
+            } label: {
+                Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
+                    .padding()
+            }//label
+        }//vstack major     
     }
 }
 
