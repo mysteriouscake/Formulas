@@ -18,7 +18,6 @@ struct areaview: View {
                 /*
                 TODO IN POINT UPDATES
                 Triangle
-                Circle
                 Trapezoid
                 */
             }
