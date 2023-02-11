@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AudioToolbox
+
 struct trapezoidview: View {
     @State var baseA: Float = 0.0
     @State var baseB: Float = 0.0

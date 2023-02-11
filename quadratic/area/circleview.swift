@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AudioToolbox
+
 struct circleview: View {
     @State var radius: Float = 0.0
      //this environment here just tells the app when it's dark mode or light mode to change assets accordingly

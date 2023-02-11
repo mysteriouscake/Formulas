@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import AudioToolbox
+
 struct triangleview: View {
     @State var base: Float = 0.0
     @State var height: Float = 0.0
