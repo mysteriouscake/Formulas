@@ -21,7 +21,17 @@ struct triangleview: View {
         return output
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Triangle")
+            .font(.title)
+            .padding
+        VStack{
+            HStack{
+                Text("Base = \(base)")
+                .padding()
+                Text("Height = \(height)")
+                .padding()
+            }
+        }
     }
 }
 
