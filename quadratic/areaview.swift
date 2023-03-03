@@ -13,11 +13,10 @@ struct areaview: View {
             List{
                 NavigationLink("Rectangle/Square", destination: rectangleview())
                 //NavigationLink("Trapezoid", destination: trapezoidview())
-                //NavigationLink("Triangle", destination: triangleview())
+                NavigationLink("Triangle", destination: triangleview())
                 NavigationLink("Circle", destination: circleview())
                 /*
                 TODO IN POINT UPDATES
-                Triangle
                 Trapezoid
                 */
             }
