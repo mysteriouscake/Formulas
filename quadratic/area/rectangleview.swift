@@ -20,6 +20,10 @@ struct rectangleview: View {
         AudioServicesPlaySystemSound(1520)
         return output
     }
+    func formatter(x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
     var body: some View {
         VStack{
             //title
@@ -43,28 +47,8 @@ struct rectangleview: View {
                     .padding()
             }//hstack minor
             VStack{
-                HStack{
-                    TextField("Length", value: $length, formatter: NumberFormatter())
-                        .padding()
-                        .keyboardType(.decimalPad)
-                    Button{
-                        length = switchSigns(input: length)
-                    } label: {
-                        Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
-                            .padding()
-                    }
-                }
-                HStack{
-                    TextField("Width", value: $width, formatter: NumberFormatter())
-                        .padding()
-                        .keyboardType(.decimalPad)
-                    Button{
-                        width = switchSigns(input: width)
-                    } label: {
-                        Image(colorScheme == .dark ? "plusminus" : "plusminuslight")
-                            .padding()
-                    }//label
-                }//hstack tf
+                    TextField("Length", value: $length, formatter: formatter(x: NumberFormatter()))
+                    TextField("Width", value: $width, formatter: formatter(x: NumberFormatter()))
             }//vstack tf
         }//vstack major
     }//view body

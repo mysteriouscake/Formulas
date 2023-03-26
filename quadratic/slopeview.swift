@@ -23,6 +23,10 @@ struct slopeview: View {
         AudioServicesPlaySystemSound(1520)
         return output
     }
+    func formatter(x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
         var body: some View {
             VStack{
                 //it's a uhhh... title lol.
