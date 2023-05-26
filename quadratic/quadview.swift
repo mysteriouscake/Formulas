@@ -67,6 +67,7 @@ struct quadview: View {
             HStack{
                 TextField("a value", value: $a, formatter: NumberFormatter())
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     a = switchSigns(input: a)
                 } label: {
@@ -77,6 +78,7 @@ struct quadview: View {
             HStack{
                 TextField("b value", value: $b, formatter: NumberFormatter())
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     b = switchSigns(input: b)
                 } label: {
@@ -87,6 +89,7 @@ struct quadview: View {
             HStack{
                 TextField("c value", value: $c, formatter: NumberFormatter())
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     c = switchSigns(input: c)
                 } label: {

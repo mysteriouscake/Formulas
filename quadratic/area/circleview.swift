@@ -30,6 +30,8 @@ struct circleview: View {
                 Text("Area = \(radius*radius*3.14159265359)")
             }
             TextField("Radius", value: $radius, formatter: NumberFormatter())
+                .padding()
+                .keyboardType(.decimalPad)
             Button{
                 radius = switchSigns(input: radius)
             } label: {

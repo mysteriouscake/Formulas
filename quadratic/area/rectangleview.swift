@@ -45,6 +45,8 @@ struct rectangleview: View {
             VStack{
                 HStack{
                     TextField("Length", value: $length, formatter: NumberFormatter())
+                        .padding()
+                        .keyboardType(.decimalPad)
                     Button{
                         length = switchSigns(input: length)
                     } label: {
@@ -54,6 +56,8 @@ struct rectangleview: View {
                 }
                 HStack{
                     TextField("Width", value: $width, formatter: NumberFormatter())
+                        .padding()
+                        .keyboardType(.decimalPad)
                     Button{
                         width = switchSigns(input: width)
                     } label: {
