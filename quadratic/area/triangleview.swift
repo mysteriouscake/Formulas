@@ -24,6 +24,18 @@ struct triangleview: View {
                 Text("Height = \(height)")
                 .padding()
             }
+            HStack{
+                Text("Area: \(base*height*0.5)")
+                .padding()
+            }
+            VStack{
+                TextField("Base", value: $base, formatter: NumberFormatter())
+                .padding()
+                .keyboardType(.decimalPad)
+                TextField("Height", value: $height, formatter: NumberFormatter())
+                .padding()
+                .keyboardType(.decimalPad)
+            }
         }
     }
 }
