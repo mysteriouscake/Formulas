@@ -1,5 +1,5 @@
 //
-//  rectprism.swift
+//  pyramid.swift
 //  quadratic
 //
 //  Created by Theodore on 6/26/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct rectprism: View {
+struct pyramid: View {
     @State var length: Float = 0.0
     @State var width: Float = 0.0
     @State var height: Float = 0.0
@@ -17,10 +17,10 @@ struct rectprism: View {
     }
     var body: some View {
         VStack{
-            Text("Rectangular Prism Volume")
+            Text("Pyramid Volume")
                 .padding()
                 .font(.title)
-            Text("Volume: \(length*width*height)")
+            Text("Volume: \((length*width*height)/3.0)")
                 .padding()
                 .font(.headline)
             VStack{
@@ -39,8 +39,8 @@ struct rectprism: View {
     }
 }
 
-struct rectprism_Previews: PreviewProvider {
+struct pyramid_Previews: PreviewProvider {
     static var previews: some View {
-        rectprism()
+        pyramid()
     }
 }
