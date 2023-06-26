@@ -21,6 +21,10 @@ struct quadview: View {
         AudioServicesPlaySystemSound(1520)
         return output
     }
+    func formatter(x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
     var body: some View {
         VStack {
             HStack{
@@ -65,8 +69,9 @@ struct quadview: View {
         VStack{
             //inputs for a, b, and c
             HStack{
-                TextField("a value", value: $a, formatter: NumberFormatter())
+                TextField("a value", value: $a, formatter: formatter(x: NumberFormatter()))
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     a = switchSigns(input: a)
                 } label: {
@@ -75,8 +80,9 @@ struct quadview: View {
                 }
             }
             HStack{
-                TextField("b value", value: $b, formatter: NumberFormatter())
+                TextField("b value", value: $b, formatter: formatter(x: NumberFormatter()))
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     b = switchSigns(input: b)
                 } label: {
@@ -85,8 +91,9 @@ struct quadview: View {
                 }
             }
             HStack{
-                TextField("c value", value: $c, formatter: NumberFormatter())
+                TextField("c value", value: $c, formatter: formatter(x: NumberFormatter()))
                     .padding()
+                    .keyboardType(.decimalPad)
                 Button{
                     c = switchSigns(input: c)
                 } label: {

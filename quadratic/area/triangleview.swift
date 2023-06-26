@@ -20,11 +20,37 @@ struct triangleview: View {
         AudioServicesPlaySystemSound(1520)
         return output
     }
+    func formatter(x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
     var body: some View {
-        Text("Triangle Area")
-            .font(.title)
-            .padding()
-        
+
+        VStack{
+            Text("Triangle")
+                .font(.title)
+                .padding()
+            Text("Area: \(base*height*0.5)")
+            HStack{
+                Text("Base = \(base)")
+                .padding()
+                Text("Height = \(height)")
+                .padding()
+            }
+            HStack{
+                Text("Area: \(base*height*0.5)")
+                .padding()
+            }
+            VStack{
+                TextField("Base", value: $base, formatter: NumberFormatter())
+                .padding()
+                .keyboardType(.decimalPad)
+                TextField("Height", value: $height, formatter: NumberFormatter())
+                .padding()
+                .keyboardType(.decimalPad)
+            }
+        }
+
     }
 }
 

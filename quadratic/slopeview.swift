@@ -23,6 +23,10 @@ struct slopeview: View {
         AudioServicesPlaySystemSound(1520)
         return output
     }
+    func formatter(x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
         var body: some View {
             VStack{
                 //it's a uhhh... title lol.
@@ -54,6 +58,8 @@ struct slopeview: View {
                     VStack{
                         HStack{
                             TextField("X One", value: $xOne, formatter: NumberFormatter())
+                                .padding()
+                                .keyboardType(.decimalPad)
                             Button{
                                 xOne = switchSigns(input: xOne)
                             } label: {
@@ -63,6 +69,8 @@ struct slopeview: View {
                         }
                         HStack{
                             TextField("Y One", value: $yOne, formatter: NumberFormatter())
+                                .padding()
+                                .keyboardType(.decimalPad)
                             Button{
                                 yOne = switchSigns(input: yOne)
                             } label: {
@@ -74,6 +82,8 @@ struct slopeview: View {
                     VStack{
                         HStack{
                             TextField("X Two", value: $xTwo, formatter: NumberFormatter())
+                                .padding()
+                                .keyboardType(.decimalPad)
                             Button{
                                 xTwo = switchSigns(input: xTwo)
                             } label: {
@@ -83,6 +93,8 @@ struct slopeview: View {
                         }
                         HStack{
                             TextField("Y Two", value: $yTwo, formatter: NumberFormatter())
+                                .padding()
+                                .keyboardType(.decimalPad)
                             Button{
                                 yTwo = switchSigns(input: yTwo)
                             } label: {
