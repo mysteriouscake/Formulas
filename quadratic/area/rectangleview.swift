@@ -12,14 +12,6 @@ import AudioToolbox
 struct rectangleview: View {
     @State var length: Float = 0.0
     @State var width: Float = 0.0
-     //this environment here just tells the app when it's dark mode or light mode to change assets accordingly
-    @Environment(\.colorScheme) var colorScheme
-    //switches -/+
-    func switchSigns(input: Float) -> Float{
-        let output = input * -1.0
-        AudioServicesPlaySystemSound(1520)
-        return output
-    }
     func formatter(x: NumberFormatter) -> Formatter{
         x.usesSignificantDigits = true
         return x
