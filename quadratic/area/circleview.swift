@@ -20,13 +20,13 @@ struct circleview: View {
             Text("Circle")
                 .font(.title)
                 .padding()
-            HStack{
+            VStack{
                 Text("Diameter = \(radius*2)")
-                    .font(.custom("SF Pro", size: 12))
+                    .padding()
                 Text("Circumference = \(radius*2*3.14159265359)")
-                    .font(.custom("SF Pro", size: 12))
+                    .padding()
                 Text("Area = \(radius*radius*3.14159265359)")
-                    .font(.custom("SF Pro", size: 12))
+                    .padding()
             }
             VStack{
                 Text("Radius")
