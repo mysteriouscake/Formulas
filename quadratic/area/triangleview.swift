@@ -42,12 +42,18 @@ struct triangleview: View {
                 .padding()
             }
             VStack{
-                TextField("Base", value: $base, formatter: NumberFormatter())
-                .padding()
-                .keyboardType(.decimalPad)
-                TextField("Height", value: $height, formatter: NumberFormatter())
-                .padding()
-                .keyboardType(.decimalPad)
+                VStack{
+                    Text("Base")
+                    TextField("Base", value: $base, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
+                VStack{
+                    Text("Height")
+                    TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
             }
         }
 

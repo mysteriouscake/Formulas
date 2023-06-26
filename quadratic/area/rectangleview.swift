@@ -39,8 +39,18 @@ struct rectangleview: View {
                     .padding()
             }//hstack minor
             VStack{
+                VStack{
+                    Text("Length")
                     TextField("Length", value: $length, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
+                VStack{
+                    Text("Width")
                     TextField("Width", value: $width, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
             }//vstack tf
         }//vstack major
     }//view body

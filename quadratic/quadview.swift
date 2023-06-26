@@ -69,9 +69,12 @@ struct quadview: View {
         VStack{
             //inputs for a, b, and c
             HStack{
-                TextField("a value", value: $a, formatter: formatter(x: NumberFormatter()))
-                    .padding()
-                    .keyboardType(.decimalPad)
+                VStack{
+                    Text("A")
+                    TextField("a value", value: $a, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
                 Button{
                     a = switchSigns(input: a)
                 } label: {
@@ -80,9 +83,12 @@ struct quadview: View {
                 }
             }
             HStack{
-                TextField("b value", value: $b, formatter: formatter(x: NumberFormatter()))
-                    .padding()
-                    .keyboardType(.decimalPad)
+                VStack{
+                    Text("B")
+                    TextField("b value", value: $b, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
                 Button{
                     b = switchSigns(input: b)
                 } label: {
@@ -91,9 +97,12 @@ struct quadview: View {
                 }
             }
             HStack{
-                TextField("c value", value: $c, formatter: formatter(x: NumberFormatter()))
-                    .padding()
-                    .keyboardType(.decimalPad)
+                VStack{
+                    Text("C")
+                    TextField("c value", value: $c, formatter: formatter(x: NumberFormatter()))
+                        .padding()
+                        .keyboardType(.decimalPad)
+                }
                 Button{
                     c = switchSigns(input: c)
                 } label: {

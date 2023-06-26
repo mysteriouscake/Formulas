@@ -28,11 +28,15 @@ struct circleview: View {
                 Text("Area = \(radius*radius*3.14159265359)")
                     .font(.custom("SF Pro", size: 12))
             }
-            TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
-            }//label
-        }//vstack major     
+            VStack{
+                Text("Radius")
+                TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
+            }
+        }//vstack major
     }
-
+}
 struct circleview_Previews: PreviewProvider {
     static var previews: some View {
         circleview()

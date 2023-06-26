@@ -18,7 +18,30 @@ struct trapezoidview: View {
         return x
     }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Trapezoid Area")
+                .padding()
+                .font(.title)
+            Text("Area: \(((baseA+baseB)/2)*height)")
+            VStack{
+                Text("Base A")
+                TextField("Base 1", value: $baseA, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
+            }
+            VStack{
+                Text("Base B")
+                TextField("Base 2", value: $baseB, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
+            }
+            VStack{
+                Text("Height")
+                TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
+            }//vstack text
+        }//vstack app
     }
 }
 
