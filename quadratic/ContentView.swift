@@ -7,8 +7,6 @@
 
 import SwiftUI
 //swiftui
-import AudioToolbox
-//haptics, baby
 
 struct ContentView: View {
     var body: some View {
@@ -18,6 +16,7 @@ struct ContentView: View {
                 NavigationLink("Quadratic", destination: quadview())
                 NavigationLink("Slope", destination: slopeview())
                 NavigationLink("Areas", destination: areaview())
+                //NavigationLink("Volumes", destination: volview())
                 /*
                 TODO FOR 4.0:
                 Volumes
