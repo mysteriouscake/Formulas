@@ -12,6 +12,7 @@ struct volview: View {
         NavigationStack{
             List{
                 NavigationLink("Rectangular Prism", destination: rectprism())
+                NavigationLink("Pyramid", destination: pyramid())
             }
         }
     }
