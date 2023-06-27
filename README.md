@@ -1,6 +1,5 @@
-# quadratic
-calculates slope equation in y-intercept form and point-slope form  
-also solves the quadratic equation for x1 and x2   
+# Formulas
+the solve-all for math  
 # roadmap 
 1. volume for spheres coming.. soon...  
 # prerequisites
