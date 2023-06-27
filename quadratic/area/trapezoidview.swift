@@ -42,6 +42,7 @@ struct trapezoidview: View {
                     .keyboardType(.decimalPad)
             }//vstack text
         }//vstack app
+        Spacer()
     }
 }
 

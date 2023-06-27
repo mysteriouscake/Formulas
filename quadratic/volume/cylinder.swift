@@ -1,15 +1,14 @@
 //
-//  rectprism.swift
+//  cylinder.swift
 //  quadratic
 //
-//  Created by Theodore on 6/26/23.
+//  Created by Theodore on 6/27/23.
 //
 
 import SwiftUI
 
-struct rectprism: View {
-    @State var length: Float = 0.0
-    @State var width: Float = 0.0
+struct cylinder: View {
+    @State var radius: Float = 0.0
     @State var height: Float = 0.0
     func formatter(x: NumberFormatter) -> Formatter{
         x.usesSignificantDigits = true
@@ -17,31 +16,31 @@ struct rectprism: View {
     }
     var body: some View {
         VStack{
-            Text("Rectangular Prism Volume")
+            Text("Cylinder Volume")
                 .padding()
                 .font(.title)
-            Text("Volume: \(length*width*height)")
+            Text("Volume: \((radius*radius*3.14159)*height)")
                 .padding()
                 .font(.headline)
             VStack{
-                Text("Length")
-                TextField("Length", value: $length, formatter: formatter(x: NumberFormatter()))
-            }
-            VStack{
-                Text("Width")
-                TextField("Width", value: $width, formatter: formatter(x: NumberFormatter()))
+                Text("Radius")
+                TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
             }
             VStack{
                 Text("Height")
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
             }
         }
         Spacer()
     }
 }
 
-struct rectprism_Previews: PreviewProvider {
+struct cylinder_Previews: PreviewProvider {
     static var previews: some View {
-        rectprism()
+        cylinder()
     }
 }

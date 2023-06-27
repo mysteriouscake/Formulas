@@ -35,6 +35,7 @@ struct circleview: View {
                     .keyboardType(.decimalPad)
             }
         }//vstack major
+        Spacer()
     }
 }
 struct circleview_Previews: PreviewProvider {

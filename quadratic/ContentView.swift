@@ -10,10 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Formulas")
-            .padding()
-            .font(.largeTitle)
-            .border(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/3/*@END_MENU_TOKEN@*/)
         //now this is navigation
         NavigationStack{
             List{

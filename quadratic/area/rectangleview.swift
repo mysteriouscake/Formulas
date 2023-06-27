@@ -53,6 +53,7 @@ struct rectangleview: View {
                 }
             }//vstack tf
         }//vstack major
+        Spacer()
     }//view body
 }
 

@@ -12,6 +12,7 @@
 		AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4560712995CE7C009D32EE /* trapezoidview.swift */; };
 		AC48A6982A4A169500DDDFA7 /* rectprism.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A6972A4A169500DDDFA7 /* rectprism.swift */; };
 		AC48A69A2A4A200400DDDFA7 /* pyramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A6992A4A200400DDDFA7 /* pyramid.swift */; };
+		AC48A69C2A4B37FC00DDDFA7 /* cylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */; };
 		AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */; };
 		AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4D2911C358009E0E23 /* ContentView.swift */; };
 		AC5D3F502911C35A009E0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		AC4560712995CE7C009D32EE /* trapezoidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trapezoidview.swift; sourceTree = "<group>"; };
 		AC48A6972A4A169500DDDFA7 /* rectprism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rectprism.swift; sourceTree = "<group>"; };
 		AC48A6992A4A200400DDDFA7 /* pyramid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyramid.swift; sourceTree = "<group>"; };
+		AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cylinder.swift; sourceTree = "<group>"; };
 		AC5D3F482911C358009E0E23 /* quadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quadratic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quadraticApp.swift; sourceTree = "<group>"; };
 		AC5D3F4D2911C358009E0E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				AC48A6972A4A169500DDDFA7 /* rectprism.swift */,
 				AC48A6992A4A200400DDDFA7 /* pyramid.swift */,
+				AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */,
 			);
 			path = volume;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB3855A2998300C0085CCC6 /* volview.swift in Sources */,
+				AC48A69C2A4B37FC00DDDFA7 /* cylinder.swift in Sources */,
 				AC4560702995CE6D009D32EE /* circleview.swift in Sources */,
 				AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */,
 				AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */,

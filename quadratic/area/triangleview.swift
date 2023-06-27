@@ -17,7 +17,6 @@ struct triangleview: View {
         return x
     }
     var body: some View {
-
         VStack{
             Text("Triangle")
                 .font(.title)
@@ -48,7 +47,7 @@ struct triangleview: View {
                 }
             }
         }
-
+        Spacer()
     }
 }
 

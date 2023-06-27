@@ -36,6 +36,7 @@ struct pyramid: View {
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
             }
         }
+        Spacer()
     }
 }
 
