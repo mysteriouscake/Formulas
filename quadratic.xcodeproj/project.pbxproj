@@ -167,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC5D3F432911C358009E0E23 /* Build configuration list for PBXProject "Formulas" */;
+			buildConfigurationList = AC5D3F432911C358009E0E23 /* Build configuration list for PBXProject "quadratic" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -358,7 +358,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -390,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC5D3F432911C358009E0E23 /* Build configuration list for PBXProject "Formulas" */ = {
+		AC5D3F432911C358009E0E23 /* Build configuration list for PBXProject "quadratic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC5D3F542911C35A009E0E23 /* Debug */,
