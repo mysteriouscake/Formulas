@@ -14,6 +14,7 @@ struct volview: View {
                 NavigationLink("Rectangular Prism", destination: rectprism())
                 NavigationLink("Pyramid", destination: pyramid())
                 NavigationLink("Cylinder", destination: cylinder())
+                NavigationLink("Cone", destination: cone())
             }
         }
     }
