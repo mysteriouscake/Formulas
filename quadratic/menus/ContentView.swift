@@ -16,11 +16,7 @@ struct ContentView: View {
                 NavigationLink("Quadratic", destination: quadview())
                 NavigationLink("Slope", destination: slopeview())
                 NavigationLink("Areas", destination: areaview())
-                //NavigationLink("Volumes", destination: volview())
-                /*
-                TODO FOR 4.0:
-                Volumes
-                */
+                NavigationLink("Volumes", destination: volview())
             }
         }
     }

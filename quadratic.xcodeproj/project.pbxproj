@@ -10,6 +10,9 @@
 		AC45606E2995CE63009D32EE /* triangleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606D2995CE63009D32EE /* triangleview.swift */; };
 		AC4560702995CE6D009D32EE /* circleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606F2995CE6D009D32EE /* circleview.swift */; };
 		AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4560712995CE7C009D32EE /* trapezoidview.swift */; };
+		AC48A6982A4A169500DDDFA7 /* rectprism.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A6972A4A169500DDDFA7 /* rectprism.swift */; };
+		AC48A69A2A4A200400DDDFA7 /* pyramid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A6992A4A200400DDDFA7 /* pyramid.swift */; };
+		AC48A69C2A4B37FC00DDDFA7 /* cylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */; };
 		AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */; };
 		AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5D3F4D2911C358009E0E23 /* ContentView.swift */; };
 		AC5D3F502911C35A009E0E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		AC45606D2995CE63009D32EE /* triangleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triangleview.swift; sourceTree = "<group>"; };
 		AC45606F2995CE6D009D32EE /* circleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleview.swift; sourceTree = "<group>"; };
 		AC4560712995CE7C009D32EE /* trapezoidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trapezoidview.swift; sourceTree = "<group>"; };
+		AC48A6972A4A169500DDDFA7 /* rectprism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rectprism.swift; sourceTree = "<group>"; };
+		AC48A6992A4A200400DDDFA7 /* pyramid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pyramid.swift; sourceTree = "<group>"; };
+		AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cylinder.swift; sourceTree = "<group>"; };
 		AC5D3F482911C358009E0E23 /* quadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quadratic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quadraticApp.swift; sourceTree = "<group>"; };
 		AC5D3F4D2911C358009E0E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,35 @@
 			path = area;
 			sourceTree = "<group>";
 		};
+		AC48A6962A4A102C00DDDFA7 /* volume */ = {
+			isa = PBXGroup;
+			children = (
+				AC48A6972A4A169500DDDFA7 /* rectprism.swift */,
+				AC48A6992A4A200400DDDFA7 /* pyramid.swift */,
+				AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */,
+			);
+			path = volume;
+			sourceTree = "<group>";
+		};
+		AC48A69D2A4B3A9C00DDDFA7 /* menus */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
+				AC7872452954E1E7009216EB /* areaview.swift */,
+				ACB385592998300C0085CCC6 /* volview.swift */,
+			);
+			path = menus;
+			sourceTree = "<group>";
+		};
+		AC48A69E2A4B3AB600DDDFA7 /* calculators */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E23542938404700E7CF21 /* quadview.swift */,
+				AC6E235229383E7600E7CF21 /* slopeview.swift */,
+			);
+			path = calculators;
+			sourceTree = "<group>";
+		};
 		AC5D3F3F2911C358009E0E23 = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */,
-				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
-				AC6E23542938404700E7CF21 /* quadview.swift */,
-				ACB385592998300C0085CCC6 /* volview.swift */,
-				AC6E235229383E7600E7CF21 /* slopeview.swift */,
-				AC7872452954E1E7009216EB /* areaview.swift */,
+				AC48A69D2A4B3A9C00DDDFA7 /* menus */,
+				AC48A69E2A4B3AB600DDDFA7 /* calculators */,
+				AC48A6962A4A102C00DDDFA7 /* volume */,
 				AC4560732995CE8A009D32EE /* area */,
 				AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */,
 				AC5D3F512911C35A009E0E23 /* Preview Content */,
@@ -170,14 +203,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB3855A2998300C0085CCC6 /* volview.swift in Sources */,
+				AC48A69C2A4B37FC00DDDFA7 /* cylinder.swift in Sources */,
 				AC4560702995CE6D009D32EE /* circleview.swift in Sources */,
 				AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */,
 				AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */,
 				AC7872462954E1E7009216EB /* areaview.swift in Sources */,
 				AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */,
 				AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */,
+				AC48A6982A4A169500DDDFA7 /* rectprism.swift in Sources */,
 				AC45606E2995CE63009D32EE /* triangleview.swift in Sources */,
 				AC7872482954E567009216EB /* rectangleview.swift in Sources */,
+				AC48A69A2A4A200400DDDFA7 /* pyramid.swift in Sources */,
 				AC6E23552938404700E7CF21 /* quadview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

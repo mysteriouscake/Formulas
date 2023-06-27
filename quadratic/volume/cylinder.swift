@@ -1,17 +1,14 @@
 //
-//  trapezoidview.swift
+//  cylinder.swift
 //  quadratic
 //
-//  Created by Theodore on 2/9/23.
+//  Created by Theodore on 6/27/23.
 //
 
 import SwiftUI
 
-import AudioToolbox
-
-struct trapezoidview: View {
-    @State var baseA: Float = 0.0
-    @State var baseB: Float = 0.0
+struct cylinder: View {
+    @State var radius: Float = 0.0
     @State var height: Float = 0.0
     func formatter(x: NumberFormatter) -> Formatter{
         x.usesSignificantDigits = true
@@ -19,21 +16,15 @@ struct trapezoidview: View {
     }
     var body: some View {
         VStack{
-            Text("Trapezoid Area")
+            Text("Cylinder Volume")
                 .padding()
                 .font(.title)
-            Text("Area: \(((baseA+baseB)/2)*height)")
+            Text("Volume: \((radius*radius*3.14159)*height)")
                 .padding()
                 .font(.headline)
             VStack{
-                Text("Base A")
-                TextField("Base 1", value: $baseA, formatter: formatter(x: NumberFormatter()))
-                    .padding()
-                    .keyboardType(.decimalPad)
-            }
-            VStack{
-                Text("Base B")
-                TextField("Base 2", value: $baseB, formatter: formatter(x: NumberFormatter()))
+                Text("Radius")
+                TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
@@ -42,14 +33,14 @@ struct trapezoidview: View {
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
-            }//vstack text
-        }//vstack app
+            }
+        }
         Spacer()
     }
 }
 
-struct trapezoidview_Previews: PreviewProvider {
+struct cylinder_Previews: PreviewProvider {
     static var previews: some View {
-        trapezoidview()
+        cylinder()
     }
 }

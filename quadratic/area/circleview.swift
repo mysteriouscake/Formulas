@@ -23,10 +23,13 @@ struct circleview: View {
             VStack{
                 Text("Diameter = \(radius*2)")
                     .padding()
+                    .font(.headline)
                 Text("Circumference = \(radius*2*3.14159265359)")
                     .padding()
+                    .font(.headline)
                 Text("Area = \(radius*radius*3.14159265359)")
                     .padding()
+                    .font(.headline)
             }
             VStack{
                 Text("Radius")
@@ -35,6 +38,7 @@ struct circleview: View {
                     .keyboardType(.decimalPad)
             }
         }//vstack major
+        Spacer()
     }
 }
 struct circleview_Previews: PreviewProvider {

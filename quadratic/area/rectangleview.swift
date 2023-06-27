@@ -24,18 +24,10 @@ struct rectangleview: View {
                 .padding()
             HStack{
                 Text("area = \(length*width)")
-                    .font(.title)
+                    .font(.headline)
                     .padding()
                 Text("perimeter = \(length*2+width*2)")
-                    .font(.title)
-                    .padding()
-            }//hstack minor
-            HStack{
-                Text("length = \(length)")
-                    .font(.title2)
-                    .padding()
-                Text("width = \(width)")
-                    .font(.title2)
+                    .font(.headline)
                     .padding()
             }//hstack minor
             VStack{
@@ -53,6 +45,7 @@ struct rectangleview: View {
                 }
             }//vstack tf
         }//vstack major
+        Spacer()
     }//view body
 }
 
