@@ -23,6 +23,8 @@ struct trapezoidview: View {
                 .padding()
                 .font(.title)
             Text("Area: \(((baseA+baseB)/2)*height)")
+                .padding()
+                .font(.headline)
             VStack{
                 Text("Base A")
                 TextField("Base 1", value: $baseA, formatter: formatter(x: NumberFormatter()))

@@ -36,37 +36,24 @@ struct quadview: View {
                 }
                 ScrollView(.horizontal){
                     Text("(\(a))*x^2+(\(a))*x+(\(c)=0")
-                        .font(.custom("SF Pro", size: 16))
+                        .font(.headline)
                         .padding()
                 }
                 ScrollView(.horizontal){
                     Text("∆=(\(b))^2-4*(\(a))*(\(c))")
-                        .font(.custom("SF Pro", size: 16))
+                        .font(.headline)
                         .padding()
                 }
             }
-            ScrollView(.horizontal){
-                HStack{
-                    VStack{
-                        //displays values entered for readability/accuracy
-                        Text("A = \(a)")
-                            .font(.custom("SF Pro", size: 20))
-                        Text("B = \(b)")
-                            .font(.custom("SF Pro", size: 20))
-                        Text("C = \(c)")
-                            .font(.custom("SF Pro", size: 20))
+            VStack{
+                //displays result values
+                Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
+                    .font(.custom("SF Pro", size: 20))
+                Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
+                    .font(.custom("SF Pro", size: 20))
+                Text("∆ = \((b*b)-(4*a*c))")
+                    .font(.custom("SF Pro", size: 20))
                     }
-                    VStack{
-                        //displays result values
-                        Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
-                            .font(.custom("SF Pro", size: 20))
-                        Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
-                            .font(.custom("SF Pro", size: 20))
-                        Text("∆ = \((b*b)-(4*a*c))")
-                            .font(.custom("SF Pro", size: 20))
-                    }
-                }
-            }
             VStack{
                 //inputs for a, b, and c
                 HStack{

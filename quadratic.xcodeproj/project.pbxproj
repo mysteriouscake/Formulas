@@ -75,6 +75,25 @@
 			path = volume;
 			sourceTree = "<group>";
 		};
+		AC48A69D2A4B3A9C00DDDFA7 /* menus */ = {
+			isa = PBXGroup;
+			children = (
+				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
+				AC7872452954E1E7009216EB /* areaview.swift */,
+				ACB385592998300C0085CCC6 /* volview.swift */,
+			);
+			path = menus;
+			sourceTree = "<group>";
+		};
+		AC48A69E2A4B3AB600DDDFA7 /* calculators */ = {
+			isa = PBXGroup;
+			children = (
+				AC6E23542938404700E7CF21 /* quadview.swift */,
+				AC6E235229383E7600E7CF21 /* slopeview.swift */,
+			);
+			path = calculators;
+			sourceTree = "<group>";
+		};
 		AC5D3F3F2911C358009E0E23 = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				AC5D3F4B2911C358009E0E23 /* quadraticApp.swift */,
-				AC5D3F4D2911C358009E0E23 /* ContentView.swift */,
-				AC6E23542938404700E7CF21 /* quadview.swift */,
-				ACB385592998300C0085CCC6 /* volview.swift */,
-				AC6E235229383E7600E7CF21 /* slopeview.swift */,
-				AC7872452954E1E7009216EB /* areaview.swift */,
+				AC48A69D2A4B3A9C00DDDFA7 /* menus */,
+				AC48A69E2A4B3AB600DDDFA7 /* calculators */,
 				AC48A6962A4A102C00DDDFA7 /* volume */,
 				AC4560732995CE8A009D32EE /* area */,
 				AC5D3F4F2911C35A009E0E23 /* Assets.xcassets */,

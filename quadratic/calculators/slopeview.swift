@@ -36,23 +36,16 @@ struct slopeview: View {
                 VStack{
                     //example
                     Text("Y-Intercept Form")
+                        .font(.headline)
                     Text("y = \((yTwo-yOne)/(xTwo-xOne))x + \(yOne-(((yTwo-yOne)/(xTwo-xOne))*xOne))")
+                        .font(.headline)
                 }
                 VStack{
                     //yet another example
                     Text("Point Slope Form")
+                        .font(.headline)
                     Text("y - \(yOne) = \((yTwo-yOne)/(xTwo-xOne))(x - \(xOne))")
-                }
-                HStack{
-                    //need to know what you're doing eh?
-                    VStack{
-                        Text("X One = \(xOne)")
-                        Text("Y One = \(yOne)")
-                    }.padding()
-                    VStack{
-                        Text("X Two = \(xTwo)")
-                        Text("Y Two = \(yTwo)")
-                    }.padding()
+                        .font(.headline)
                 }
                 HStack{
                     VStack{

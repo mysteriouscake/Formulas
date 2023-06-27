@@ -22,16 +22,8 @@ struct triangleview: View {
                 .font(.title)
                 .padding()
             Text("Area: \(base*height*0.5)")
-            HStack{
-                Text("Base = \(base)")
                 .padding()
-                Text("Height = \(height)")
-                .padding()
-            }
-            HStack{
-                Text("Area: \(base*height*0.5)")
-                .padding()
-            }
+                .font(.headline)
             VStack{
                 VStack{
                     Text("Base")
