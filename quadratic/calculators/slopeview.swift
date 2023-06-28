@@ -52,7 +52,7 @@ struct slopeview: View {
                         HStack{
                             VStack{
                                 Text("X1")
-                                TextField("X One", value: $xOne, formatter: NumberFormatter())
+                                TextField("X One", value: $xOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
                             }
@@ -66,7 +66,7 @@ struct slopeview: View {
                         HStack{
                             VStack{
                                 Text("Y1")
-                                TextField("Y One", value: $yOne, formatter: NumberFormatter())
+                                TextField("Y One", value: $yOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
                             }
@@ -82,7 +82,7 @@ struct slopeview: View {
                         HStack{
                             VStack{
                                 Text("X2")
-                                TextField("X Two", value: $xTwo, formatter: NumberFormatter())
+                                TextField("X Two", value: $xTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
                             }
@@ -96,7 +96,7 @@ struct slopeview: View {
                         HStack{
                             VStack{
                                 Text("Y2")
-                                TextField("Y Two", value: $yTwo, formatter: NumberFormatter())
+                                TextField("Y Two", value: $yTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
                             }
