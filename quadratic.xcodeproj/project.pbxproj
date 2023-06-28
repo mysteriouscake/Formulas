@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC40D4422A4C8670003F34FB /* sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40D4412A4C8670003F34FB /* sphere.swift */; };
 		AC45606E2995CE63009D32EE /* triangleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606D2995CE63009D32EE /* triangleview.swift */; };
 		AC4560702995CE6D009D32EE /* circleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606F2995CE6D009D32EE /* circleview.swift */; };
 		AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4560712995CE7C009D32EE /* trapezoidview.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC40D4412A4C8670003F34FB /* sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sphere.swift; sourceTree = "<group>"; };
 		AC45606D2995CE63009D32EE /* triangleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triangleview.swift; sourceTree = "<group>"; };
 		AC45606F2995CE6D009D32EE /* circleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleview.swift; sourceTree = "<group>"; };
 		AC4560712995CE7C009D32EE /* trapezoidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trapezoidview.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				AC48A6992A4A200400DDDFA7 /* pyramid.swift */,
 				AC48A69B2A4B37FC00DDDFA7 /* cylinder.swift */,
 				AC7CC05C2A4B5264002EB5F5 /* cone.swift */,
+				AC40D4412A4C8670003F34FB /* sphere.swift */,
 			);
 			path = volume;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				AC5D3F4E2911C358009E0E23 /* ContentView.swift in Sources */,
 				AC4560722995CE7C009D32EE /* trapezoidview.swift in Sources */,
 				AC7872462954E1E7009216EB /* areaview.swift in Sources */,
+				AC40D4422A4C8670003F34FB /* sphere.swift in Sources */,
 				AC6E235329383E7600E7CF21 /* slopeview.swift in Sources */,
 				AC5D3F4C2911C358009E0E23 /* quadraticApp.swift in Sources */,
 				AC48A6982A4A169500DDDFA7 /* rectprism.swift in Sources */,

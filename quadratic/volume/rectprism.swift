@@ -26,14 +26,20 @@ struct rectprism: View {
             VStack{
                 Text("Length")
                 TextField("Length", value: $length, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
             }
             VStack{
                 Text("Width")
                 TextField("Width", value: $width, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
             }
             VStack{
                 Text("Height")
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
+                    .padding()
+                    .keyboardType(.decimalPad)
             }
         }
         Spacer()
