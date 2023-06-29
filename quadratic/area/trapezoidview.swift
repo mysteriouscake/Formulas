@@ -25,20 +25,23 @@ struct trapezoidview: View {
             Text("Area: \(((baseA+baseB)/2)*height)")
                 .padding()
                 .font(.headline)
-            VStack{
-                Text("Base A")
+            HStack{
+                Text("Base A ->")
+                    .fontWeight(.bold)
                 TextField("Base 1", value: $baseA, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            VStack{
-                Text("Base B")
+            HStack{
+                Text("Base B ->")
+                    .fontWeight(.bold)
                 TextField("Base 2", value: $baseB, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            VStack{
-                Text("Height")
+            HStack{
+                Text("Height ->")
+                    .fontWeight(.bold)
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)

@@ -57,8 +57,9 @@ struct quadview: View {
             VStack{
                 //inputs for a, b, and c
                 HStack{
-                    VStack{
-                        Text("A")
+                    HStack{
+                        Text("A ->")
+                            .fontWeight(.bold)
                         TextField("a value", value: $a, formatter: formatter(x: NumberFormatter()))
                             .padding()
                             .keyboardType(.decimalPad)
@@ -71,8 +72,9 @@ struct quadview: View {
                     }
                 }
                 HStack{
-                    VStack{
-                        Text("B")
+                    HStack{
+                        Text("B ->")
+                            .fontWeight(.bold)
                         TextField("b value", value: $b, formatter: formatter(x: NumberFormatter()))
                             .padding()
                             .keyboardType(.decimalPad)
@@ -85,8 +87,9 @@ struct quadview: View {
                     }
                 }
                 HStack{
-                    VStack{
-                        Text("C")
+                    HStack{
+                        Text("C ->")
+                            .fontWeight(.bold)
                         TextField("c value", value: $c, formatter: formatter(x: NumberFormatter()))
                             .padding()
                             .keyboardType(.decimalPad)

@@ -22,14 +22,16 @@ struct cylinder: View {
             Text("Volume: \((radius*radius*3.14159)*height)")
                 .padding()
                 .font(.headline)
-            VStack{
-                Text("Radius")
+            HStack{
+                Text("Radius ->")
+                    .fontWeight(.bold)
                 TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            VStack{
-                Text("Height")
+            HStack{
+                Text("Height ->")
+                    .fontWeight(.bold)
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)

@@ -25,14 +25,16 @@ struct triangleview: View {
                 .padding()
                 .font(.headline)
             VStack{
-                VStack{
-                    Text("Base")
+                HStack{
+                    Text("Base ->")
+                        .fontWeight(.bold)
                     TextField("Base", value: $base, formatter: formatter(x: NumberFormatter()))
                         .padding()
                         .keyboardType(.decimalPad)
                 }
-                VStack{
-                    Text("Height")
+                HStack{
+                    Text("Height ->")
+                        .fontWeight(.bold)
                     TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
                         .padding()
                         .keyboardType(.decimalPad)

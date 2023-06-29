@@ -31,8 +31,9 @@ struct circleview: View {
                     .padding()
                     .font(.headline)
             }
-            VStack{
-                Text("Radius")
+            HStack{
+                Text("Radius ->")
+                    .fontWeight(.bold)
                 TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)

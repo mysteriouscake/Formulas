@@ -21,8 +21,9 @@ struct sphere: View {
             Text("Volume: \(1.3333333*3.14159*radius*radius*radius)")
                 .padding()
                 .font(.headline)
-            VStack{
-                Text("Radius")
+            HStack{
+                Text("Radius ->")
+                    .fontWeight(.bold)
                 TextField("Radius", value: $radius, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)

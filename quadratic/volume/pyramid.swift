@@ -23,20 +23,23 @@ struct pyramid: View {
             Text("Volume: \((length*width*height)/3.0)")
                 .padding()
                 .font(.headline)
-            VStack{
-                Text("Length")
+            HStack{
+                Text("Length ->")
+                    .fontWeight(.bold)
                 TextField("Length", value: $length, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            VStack{
-                Text("Width")
+            HStack{
+                Text("Width ->")
+                    .fontWeight(.bold)
                 TextField("Width", value: $width, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)
             }
-            VStack{
-                Text("Height")
+            HStack{
+                Text("Height ->")
+                    .fontWeight(.bold)
                 TextField("Height", value: $height, formatter: formatter(x: NumberFormatter()))
                     .padding()
                     .keyboardType(.decimalPad)

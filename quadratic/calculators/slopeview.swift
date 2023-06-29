@@ -50,8 +50,9 @@ struct slopeview: View {
                 HStack{
                     VStack{
                         HStack{
-                            VStack{
-                                Text("X1")
+                            HStack{
+                                Text("X1 ->")
+                                    .fontWeight(.bold)
                                 TextField("X One", value: $xOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
@@ -64,8 +65,9 @@ struct slopeview: View {
                             }
                         }
                         HStack{
-                            VStack{
-                                Text("Y1")
+                            HStack{
+                                Text("Y1 ->")
+                                    .fontWeight(.bold)
                                 TextField("Y One", value: $yOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
@@ -80,8 +82,9 @@ struct slopeview: View {
                     }
                     VStack{
                         HStack{
-                            VStack{
-                                Text("X2")
+                            HStack{
+                                Text("X2 ->")
+                                    .fontWeight(.bold)
                                 TextField("X Two", value: $xTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
@@ -94,8 +97,9 @@ struct slopeview: View {
                             }
                         }
                         HStack{
-                            VStack{
-                                Text("Y2")
+                            HStack{
+                                Text("Y2 ->")
+                                    .fontWeight(.bold)
                                 TextField("Y Two", value: $yTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
