@@ -41,16 +41,19 @@ struct pythagoras: View {
                 Text("Side A ->")
                     .fontWeight(.bold)
                 TextField("Side A", value: $a, formatter: formatter(x: NumberFormatter()))
+                    .keyboardType(.decimalPad)
             } .padding()
             HStack{
                 Text("Side B ->")
                     .fontWeight(.bold)
                 TextField("Side B", value: $b, formatter: formatter(x: NumberFormatter()))
+                    .keyboardType(.decimalPad)
             } .padding()
             HStack{
                 Text("Side C ->")
                     .fontWeight(.bold)
                 TextField("Side C", value: $c, formatter: formatter(x: NumberFormatter()))
+                    .keyboardType(.decimalPad)
             } .padding()
         }
         Spacer()
