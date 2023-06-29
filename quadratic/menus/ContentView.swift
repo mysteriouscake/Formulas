@@ -15,6 +15,7 @@ struct ContentView: View {
             List{
                 NavigationLink("Quadratic", destination: quadview())
                 NavigationLink("Slope", destination: slopeview())
+                NavigationLink("Pythagoras", destination: pythagoras())
                 NavigationLink("Areas", destination: areaview())
                 NavigationLink("Volumes", destination: volview())
             }

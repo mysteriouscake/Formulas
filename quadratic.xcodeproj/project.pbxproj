@@ -24,6 +24,7 @@
 		AC7872482954E567009216EB /* rectangleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7872472954E567009216EB /* rectangleview.swift */; };
 		AC7CC05D2A4B5264002EB5F5 /* cone.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CC05C2A4B5264002EB5F5 /* cone.swift */; };
 		ACB3855A2998300C0085CCC6 /* volview.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB385592998300C0085CCC6 /* volview.swift */; };
+		ACF42DEA2A4DDD8200CBC255 /* pythagoras.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF42DE92A4DDD8200CBC255 /* pythagoras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		AC7872472954E567009216EB /* rectangleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rectangleview.swift; sourceTree = "<group>"; };
 		AC7CC05C2A4B5264002EB5F5 /* cone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cone.swift; sourceTree = "<group>"; };
 		ACB385592998300C0085CCC6 /* volview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volview.swift; sourceTree = "<group>"; };
+		ACF42DE92A4DDD8200CBC255 /* pythagoras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pythagoras.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				AC6E23542938404700E7CF21 /* quadview.swift */,
 				AC6E235229383E7600E7CF21 /* slopeview.swift */,
+				ACF42DE92A4DDD8200CBC255 /* pythagoras.swift */,
 			);
 			path = calculators;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				AC45606E2995CE63009D32EE /* triangleview.swift in Sources */,
 				AC7CC05D2A4B5264002EB5F5 /* cone.swift in Sources */,
 				AC7872482954E567009216EB /* rectangleview.swift in Sources */,
+				ACF42DEA2A4DDD8200CBC255 /* pythagoras.swift in Sources */,
 				AC48A69A2A4A200400DDDFA7 /* pyramid.swift in Sources */,
 				AC6E23552938404700E7CF21 /* quadview.swift in Sources */,
 			);
