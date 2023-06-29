@@ -30,13 +30,10 @@ struct pythagoras: View {
                 .font(.title)
             Text("Side A: \(sqrt(pow(num: c, pow: 2) - pow(num: b, pow: 2)))")
                 .font(.headline)
-                .padding()
             Text("Side B: \(sqrt(pow(num: c, pow: 2) - pow(num: a, pow: 2)))")
                 .font(.headline)
-                .padding()
             Text("Side C: \(sqrt(pow(num: a, pow: 2) + pow(num: b, pow: 2)))")
                 .font(.headline)
-                .padding()
             HStack{
                 Text("Side A ->")
                     .fontWeight(.bold)
