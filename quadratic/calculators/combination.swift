@@ -17,7 +17,7 @@ struct combination: View {
         let userinput = input
         for i in 1...userinput{
             out &*= i
-            //cant process numbers larger than 20!
+            //cant process numbers larger than 2.432902e+18 or 20!
         }
         return out
     }
