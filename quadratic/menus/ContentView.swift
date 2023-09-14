@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //now this is navigation
+        //TODO: separate list view for calculators
         NavigationStack{
             List{
                 NavigationLink("Quadratic", destination: quadview())
