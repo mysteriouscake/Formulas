@@ -40,7 +40,7 @@ struct combination: View {
                         failcheck = true
                     }
                 }){
-                    Label("Calculate", systemImage: "candybarphone")
+                    Label("Calculate", systemImage: "function")
                 }
                 .alert("Error: Possible Overflow", isPresented: $failcheck){
                     Button("OK", action: {
