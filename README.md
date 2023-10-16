@@ -1,7 +1,7 @@
 # Formulas
 the solve-all for math  
 # roadmap 
-1. nothing
+1. nothing, YET
 # prerequisites
 an iOS device on iOS 16+ for physical testing, xcode 14
 # install instructions  
