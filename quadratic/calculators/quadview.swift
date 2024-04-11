@@ -13,6 +13,9 @@ struct quadview: View {
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
+    /* let disc = (b*-1)+(-4*a*c)
+    let res1 = ((b*b)+sqrt(disc))/2*a
+    let res2 = ((b*b)-sqrt(disc))/2*a */
     //this environment here just tells the app when it's dark mode or light mode to change assets accordingly
     @Environment(\.colorScheme) var colorScheme
     //switches from positive to negative
@@ -26,6 +29,9 @@ struct quadview: View {
         return x
     }
     var body: some View {
+        let disc = (b * -1)+(-4*a*c)
+        let res1 = ((b*b)+sqrt(disc))/2*a
+        let res2 = ((b*b)-sqrt(disc))/2*a
         VStack{
             VStack {
                 HStack{
@@ -47,11 +53,11 @@ struct quadview: View {
             }
             VStack{
                 //displays result values
-                Text("x1 = \(((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a))")
+                Text("x1 = \(res1 /*((-1*b)+sqrt((b*b)-(4*a*c)))/(2*a)*/)")
                     .font(.custom("SF Pro", size: 20))
-                Text("x2 = \(((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a))")
+                Text("x2 = \(res2/*((-1*b)-sqrt((b*b)-(4*a*c)))/(2*a)*/)")
                     .font(.custom("SF Pro", size: 20))
-                Text("∆ = \((b*b)-(4*a*c))")
+                Text("∆ = \(disc/*(b*b)-(4*a*c)*/)")
                     .font(.custom("SF Pro", size: 20))
                     }
             VStack{
