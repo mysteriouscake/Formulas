@@ -9,4 +9,3 @@ you will need:
 - a mac  
 - xcode
 - at least two braincells to rub together
-note: this install will last 7 days before it expires and you have to repeat this process
