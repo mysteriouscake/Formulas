@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC37E08E2CACD53900D550F1 /* atomicabundance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37E08D2CACD53900D550F1 /* atomicabundance.swift */; };
 		AC40D4422A4C8670003F34FB /* sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40D4412A4C8670003F34FB /* sphere.swift */; };
 		AC45606E2995CE63009D32EE /* triangleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606D2995CE63009D32EE /* triangleview.swift */; };
 		AC4560702995CE6D009D32EE /* circleview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45606F2995CE6D009D32EE /* circleview.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC37E08D2CACD53900D550F1 /* atomicabundance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atomicabundance.swift; sourceTree = "<group>"; };
 		AC40D4412A4C8670003F34FB /* sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sphere.swift; sourceTree = "<group>"; };
 		AC45606D2995CE63009D32EE /* triangleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triangleview.swift; sourceTree = "<group>"; };
 		AC45606F2995CE6D009D32EE /* circleview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleview.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				ACF8EB002A7027A800DDE9B2 /* combination.swift */,
 				AC6E235229383E7600E7CF21 /* slopeview.swift */,
 				ACF42DE92A4DDD8200CBC255 /* pythagoras.swift */,
+				AC37E08D2CACD53900D550F1 /* atomicabundance.swift */,
 			);
 			path = calculators;
 			sourceTree = "<group>";
@@ -172,7 +175,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					AC5D3F472911C358009E0E23 = {
 						CreatedOnToolsVersion = 14.1;
@@ -226,6 +229,7 @@
 				AC48A6982A4A169500DDDFA7 /* rectprism.swift in Sources */,
 				AC45606E2995CE63009D32EE /* triangleview.swift in Sources */,
 				ACF8EB012A7027A800DDE9B2 /* combination.swift in Sources */,
+				AC37E08E2CACD53900D550F1 /* atomicabundance.swift in Sources */,
 				AC7CC05D2A4B5264002EB5F5 /* cone.swift in Sources */,
 				AC7872482954E567009216EB /* rectangleview.swift in Sources */,
 				ACF42DEA2A4DDD8200CBC255 /* pythagoras.swift in Sources */,
@@ -273,6 +277,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -333,6 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -374,7 +380,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0;
+				MARKETING_VERSION = 4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -406,7 +412,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.0;
+				MARKETING_VERSION = 4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theodorevu.quadratic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
