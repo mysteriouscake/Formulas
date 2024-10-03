@@ -1,7 +1,7 @@
 # Formulas
 the solve-all for math  
 # roadmap 
-1. nothing, YET
+1. add some chem stuff
 # prerequisites
 you will need:  
 - a mac  
