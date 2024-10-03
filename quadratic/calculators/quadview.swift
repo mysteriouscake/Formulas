@@ -72,6 +72,7 @@ struct quadview: View {
                             .padding()
                             .keyboardType(.decimalPad)
                     }
+                    .padding()
                     Button{
                         a = switchSigns(input: a)
                     } label: {
@@ -87,6 +88,7 @@ struct quadview: View {
                             .padding()
                             .keyboardType(.decimalPad)
                     }
+                    .padding()
                     Button{
                         b = switchSigns(input: b)
                     } label: {
@@ -102,6 +104,7 @@ struct quadview: View {
                             .padding()
                             .keyboardType(.decimalPad)
                     }
+                    .padding()
                     Button{
                         c = switchSigns(input: c)
                     } label: {
