@@ -63,7 +63,7 @@ struct slopeview: View {
                                 TextField("X One", value: $xOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
-                            }
+                            }.padding()
                             Button{
                                 xOne = switchSigns(input: xOne)
                             } label: {
@@ -78,7 +78,7 @@ struct slopeview: View {
                                 TextField("Y One", value: $yOne, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
-                            }
+                            }.padding()
                             Button{
                                 yOne = switchSigns(input: yOne)
                             } label: {
@@ -95,7 +95,7 @@ struct slopeview: View {
                                 TextField("X Two", value: $xTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
-                            }
+                            }.padding()
                             Button{
                                 xTwo = switchSigns(input: xTwo)
                             } label: {
@@ -110,7 +110,7 @@ struct slopeview: View {
                                 TextField("Y Two", value: $yTwo, formatter: formatter(x: NumberFormatter()))
                                     .padding()
                                     .keyboardType(.decimalPad)
-                            }
+                            }.padding()
                             Button{
                                 yTwo = switchSigns(input: yTwo)
                             } label: {
