@@ -36,6 +36,7 @@ struct atomicmassub: View{
 
 struct atomicmass: View {
     @StateObject var data = atomicmassvars()
+    @State var result: Float = 0
     var body: some View {
         VStack {
             HStack {
@@ -46,8 +47,24 @@ struct atomicmass: View {
                 Text("Masses: \(data.masses.endIndex)")
                 Text("Abundances: \(data.abundances.endIndex)")
             }
-            .font(.custom("SF Pro", size: 20))
-            .padding()
+            HStack {
+                Text("Average Mass = \(result)")
+                    .font(.custom("SF Pro", size: 20))
+                    .padding()
+                Button(action: {
+                    var results:[Float] = Array(repeating: 0, count: data.masses.endIndex)
+                    //chat can we just have c style for loops
+                    for i in 0 ..< data.masses.endIndex{
+                        results[i] = data.masses[i]*data.abundances[i]
+                    }
+                    //var bingus: Float = 0
+                    for ii in 0 ..< data.masses.endIndex{
+                        result += results[ii]
+                    }
+                }){
+                    Text("Hawk Tuah! Calculate on that Thang!")
+                }
+            }
             HStack{
                 Button(action: {data.index+=1}){
                     Text("Add Isotope")
