@@ -13,9 +13,6 @@ struct quadview: View {
     @State var a: Float = 0.0
     @State var b: Float = 0.0
     @State var c: Float = 0.0
-    /* let disc = (b*-1)+(-4*a*c)
-    let res1 = ((b*b)+sqrt(disc))/2*a
-    let res2 = ((b*b)-sqrt(disc))/2*a */
     //this environment here just tells the app when it's dark mode or light mode to change assets accordingly
     @Environment(\.colorScheme) var colorScheme
     //switches from positive to negative
