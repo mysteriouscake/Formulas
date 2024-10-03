@@ -25,10 +25,12 @@ struct atomicmassub: View{
             HStack{
                 Text("#\(data.index) Mass: ")
                 TextField("Isotope 1", value: $data.masses[0], formatter: formatter(x: NumberFormatter()))
+                .keyboardType(.decimalPad)
             }
             HStack{
                 Text("#\(data.index) Abundance: ")
                 TextField("Isotope 1", value: $data.abundances[0], formatter: formatter(x: NumberFormatter()))
+                .keyboardType(.decimalPad)
             }
         }
     }
