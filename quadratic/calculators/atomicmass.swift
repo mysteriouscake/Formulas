@@ -23,11 +23,11 @@ struct atomicmassub: View{
     var body: some View{
         HStack{
             HStack{
-                Text("Isotope \(data.index) Mass: ")
+                Text("#\(data.index) Mass: ")
                 TextField("Isotope 1", value: $data.masses[0], formatter: formatter(x: NumberFormatter()))
             }
             HStack{
-                Text("Isotope 1 Abundance: ")
+                Text("#\(data.index) Abundance: ")
                 TextField("Isotope 1", value: $data.abundances[0], formatter: formatter(x: NumberFormatter()))
             }
         }
@@ -52,12 +52,12 @@ struct atomicmass: View {
                     .font(.custom("SF Pro", size: 20))
                     .padding()
                 Button(action: {
+                    result = 0
                     var results:[Float] = Array(repeating: 0, count: data.masses.endIndex)
                     //chat can we just have c style for loops
                     for i in 0 ..< data.masses.endIndex{
                         results[i] = data.masses[i]*data.abundances[i]
                     }
-                    //var bingus: Float = 0
                     for ii in 0 ..< data.masses.endIndex{
                         result += results[ii]
                     }
