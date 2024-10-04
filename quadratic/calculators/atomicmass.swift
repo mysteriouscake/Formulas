@@ -10,7 +10,7 @@ import SwiftUI
 class atomicmassvars: ObservableObject{
     @Published var masses:[Float] = [0]
     @Published var abundances:[Float] = [0]
-    @Published var index:Int = 1
+    @Published var index:Int = 0
 }
 
 func formatter (x: NumberFormatter) -> Formatter{
@@ -19,17 +19,18 @@ func formatter (x: NumberFormatter) -> Formatter{
 }
 
 struct atomicmassub: View{
-    @StateObject var data = atomicmassvars()
+    @EnvironmentObject var data:atomicmassvars
+    @State var index: Int = 0
     var body: some View{
         HStack{
             HStack{
                 Text("#\(data.index) Mass: ")
-                TextField("Isotope 1", value: $data.masses[0], formatter: formatter(x: NumberFormatter()))
+                TextField("Isotope 1", value: $data.masses[data.index], formatter: formatter(x: NumberFormatter()))
                 .keyboardType(.decimalPad)
             }
             HStack{
                 Text("#\(data.index) Abundance: ")
-                TextField("Isotope 1", value: $data.abundances[0], formatter: formatter(x: NumberFormatter()))
+                TextField("Isotope 1", value: $data.abundances[data.index], formatter: formatter(x: NumberFormatter()))
                 .keyboardType(.decimalPad)
             }
         }
@@ -64,22 +65,34 @@ struct atomicmass: View {
                         result += results[ii]
                     }
                 }){
-                    Text("Hawk Tuah! Calculate on that Thang!")
+                    HStack {
+                        Text("Calculate")
+                        Image(systemName: "function")
+                    }.font(.custom("SF Pro", size: 20))
                 }
             }
             HStack{
-                Button(action: {data.index+=1}){
+                Button(action: {
+                    data.masses.append(0)
+                    data.abundances.append(0)
+                    data.index+=1
+                }){
                     Text("Add Isotope")
                 }
-                Button(action: {data.index-=1}){
+                Button(action: {
+                    data.masses.removeLast()
+                    data.abundances.removeLast()
+                    data.index-=1
+                }){
                     Text("Remove Isotope")
                 }
             }
             ForEach(0 ..< data.index, id: \.self){ _ in
-                atomicmassub()
+                atomicmassub(index: data.index)
             }
             Spacer()
         }.padding()
+            .environmentObject(data)
     }
 }
 
