@@ -95,7 +95,9 @@ struct atomicmass: View {
     }
 }
 
-#Preview {
-    atomicmass()
-        .environmentObject(atomicmassvars())
+struct atomicmass_Previews: PreviewProvider {
+    static var previews: some View {
+        atomicmass()
+            .environmentObject(atomicmassvars())
+    }
 }
