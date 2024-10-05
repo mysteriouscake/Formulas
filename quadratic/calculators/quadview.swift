@@ -110,8 +110,8 @@ struct quadview: View {
                     }
                 }
             }
-        }
         Spacer()
+        }
     }
 }
 struct quadview_Previews: PreviewProvider {
