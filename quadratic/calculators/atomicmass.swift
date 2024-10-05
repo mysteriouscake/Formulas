@@ -48,7 +48,6 @@ struct atomicmass: View {
             }.font(.title)
             HStack{
                 Text("Total amount of isotopes: \(data.index)")
-                //Text("Abundances: \(data.abundances.endIndex)")
             }
             HStack {
                 Text("Average Mass = \(result)")
