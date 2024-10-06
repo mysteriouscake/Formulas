@@ -4,41 +4,20 @@
 //
 //  Created by Theodore on 10/1/24.
 //
+//  never touch this unless it gets borked by an ios update
+//
 
 import SwiftUI
-
-class atomicmassvars: ObservableObject{
-    @Published var masses:[Float] = [0]
-    @Published var abundances:[Float] = [0]
-    @Published var index:Int = 0
-}
 
 func formatter (x: NumberFormatter) -> Formatter{
     x.usesSignificantDigits = true
     return x
 }
 
-struct atomicmassub: View{
-    @EnvironmentObject var data:atomicmassvars
-    @State var index: Int = 0
-    var body: some View{
-        HStack{
-            HStack{
-                Text("#\(data.index) Mass: ")
-                TextField("Isotope 1", value: $data.masses[data.index], formatter: formatter(x: NumberFormatter()))
-                .keyboardType(.decimalPad)
-            }
-            HStack{
-                Text("#\(data.index) Abundance: ")
-                TextField("Isotope 1", value: $data.abundances[data.index], formatter: formatter(x: NumberFormatter()))
-                .keyboardType(.decimalPad)
-            }
-        }
-    }
-}
-
 struct atomicmass: View {
-    @StateObject var data = atomicmassvars()
+    @State var masses: [Float] = Array(repeating: 0, count: 1)
+    @State var abundances: [Float] = Array(repeating: 0, count: 1)
+    @State var iindex: Int = 0
     @State var result: Float = 0
     var body: some View {
         VStack {
@@ -47,7 +26,7 @@ struct atomicmass: View {
                 Image(systemName: "atom")
             }.font(.title)
             HStack{
-                Text("Total amount of isotopes: \(data.index)")
+                Text("Total amount of isotopes: \(iindex)")
             }
             HStack {
                 Text("Average Mass = \(result)")
@@ -55,12 +34,12 @@ struct atomicmass: View {
                     .padding()
                 Button(action: {
                     result = 0
-                    var results:[Float] = Array(repeating: 0, count: data.masses.endIndex)
+                    var results:[Float] = Array(repeating: 0, count: masses.endIndex)
                     //chat can we just have c style for loops
-                    for i in 0 ..< data.masses.endIndex{
-                        results[i] = data.masses[i]*data.abundances[i]
+                    for i in 0 ..< masses.endIndex{
+                        results[i] = masses[i]*abundances[i]
                     }
-                    for ii in 0 ..< data.masses.endIndex{
+                    for ii in 0 ..< masses.endIndex{
                         result += results[ii]
                     }
                 }){
@@ -72,32 +51,41 @@ struct atomicmass: View {
             }
             HStack{
                 Button(action: {
-                    data.masses.append(0)
-                    data.abundances.append(0)
-                    data.index+=1
+                    masses.append(0)
+                    abundances.append(0)
+                    iindex+=1
                 }){
                     Text("Add Isotope")
                 }
                 Button(action: {
-                    data.masses.removeLast()
-                    data.abundances.removeLast()
-                    data.index-=1
+                    masses.removeLast()
+                    abundances.removeLast()
+                    iindex-=1
                 }){
                     Text("Remove Isotope")
                 }
             }
-            ForEach(0 ..< data.index, id: \.self){ _ in
-                atomicmassub(index: data.index)
+            ForEach(0 ..< iindex, id: \.self){ iindex in
+                HStack{
+                    HStack{
+                        Text("#\(iindex) Mass: ")
+                        TextField("Isotope 1", value: $masses[iindex], formatter: formatter(x: NumberFormatter()))
+                            .keyboardType(.decimalPad)
+                    }
+                    HStack{
+                        Text("#\(iindex) Abundance: ")
+                        TextField("Isotope 1", value: $abundances[iindex], formatter: formatter(x: NumberFormatter()))
+                            .keyboardType(.decimalPad)
+                    }
+                }
             }
             Spacer()
         }.padding()
-            .environmentObject(data)
     }
 }
 
 struct atomicmass_Previews: PreviewProvider {
     static var previews: some View {
         atomicmass()
-            .environmentObject(atomicmassvars())
     }
 }
