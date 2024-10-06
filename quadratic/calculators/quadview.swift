@@ -28,9 +28,9 @@ struct quadview: View {
     var body: some View {
         //stupid compiler can't do big number
         //why use big formula when little formula glue together work a little bit slower
-        let disc = (b * -1)+(-4*a*c)
-        let res1 = ((b*b)+sqrt(disc))/2*a
-        let res2 = ((b*b)-sqrt(disc))/2*a
+        var disc = (b * -1)+(-4*a*c)
+        var res1 = ((b*b)+sqrt(disc))/(2*a)
+        var res2 = ((b*b)-sqrt(disc))/(2*a)
         VStack{
             VStack {
                 HStack{
