@@ -9,16 +9,15 @@
 
 import SwiftUI
 
-func formatter (x: NumberFormatter) -> Formatter{
-    x.usesSignificantDigits = true
-    return x
-}
-
 struct atomicmass: View {
     @State var masses: [Float] = Array(repeating: 0, count: 1)
     @State var abundances: [Float] = Array(repeating: 0, count: 1)
     @State var iindex: Int = 0
     @State var result: Float = 0
+    func formatter (x: NumberFormatter) -> Formatter{
+        x.usesSignificantDigits = true
+        return x
+    }
     var body: some View {
         VStack {
             HStack {
