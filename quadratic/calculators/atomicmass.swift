@@ -6,6 +6,8 @@
 //
 //  never touch this unless it gets borked by an ios update
 //
+//  also this is just a glorified weighted average machine
+//
 
 import SwiftUI
 
@@ -47,7 +49,7 @@ struct atomicmass: View {
                         Image(systemName: "function")
                     }.font(.custom("SF Pro", size: 20))
                 }
-            }
+            }.padding()
             HStack{
                 Button(action: {
                     masses.append(0)
@@ -63,7 +65,7 @@ struct atomicmass: View {
                 }){
                     Text("Remove Isotope")
                 }
-            }
+            }.padding()
             ForEach(0 ..< iindex, id: \.self){ iindex in
                 HStack{
                     HStack{
@@ -76,7 +78,7 @@ struct atomicmass: View {
                         TextField("Isotope 1", value: $abundances[iindex], formatter: formatter(x: NumberFormatter()))
                             .keyboardType(.decimalPad)
                     }
-                }
+                }.padding()
             }
             Spacer()
         }.padding()
